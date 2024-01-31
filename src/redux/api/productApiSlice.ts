@@ -28,7 +28,7 @@ export const productApiSlice = createApi({
         }),
         getProducts: builder.query<IGetProductsResponse, IGetProductsInput>({
             query: ({ count = pageSize, page = 1 }) =>
-                `General/Product/ProductList?count=${count}&skip=${(page - 1) * count}`,
+                `General/Product/ProductList?count=${count}&skip=${(page - 1) * count}&orderBy=title`,
             serializeQueryArgs: ({ endpointName }) => {
                 return endpointName
             },
