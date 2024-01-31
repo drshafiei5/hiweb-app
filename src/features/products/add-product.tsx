@@ -137,7 +137,7 @@ const AddProduct = () => {
                         label="انتخاب فایل"
                         errors={errors}
                         register={register}
-                        className="file:border-0 file:bg-gray-100 file:me-4 file:py-2 file:px-4 p-0"
+                        className="file:border-0 file:bg-gray-100 file:me-4 file:py-2 file:px-4 px-0 py-0"
                         registerOptions={{
                             required: {
                                 value: true,
